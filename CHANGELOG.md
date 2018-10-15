@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [3.9.2] - 2018-10-15
+### Fixed
+- Zabbix API Error Incorrect arguments passed to function when attempting to acknowledge problems. [#629](https://github.com/alexanderzobnin/grafana-zabbix/issues/629)
+
 ## [3.9.1] - 2018-05-02
 ### Fixed
 - Datasource fails when "Direct DB connection" enabled [#564](https://github.com/alexanderzobnin/grafana-zabbix/issues/564)

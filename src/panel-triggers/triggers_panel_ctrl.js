@@ -494,8 +494,8 @@ export class TriggerPanelCtrl extends PanelCtrl {
   formatHostGroups(trigger) {
     let groupNames = "";
     if (this.panel.hostGroups) {
-      let groups = _.map(trigger.groups, 'name').join(', ');
-      groupNames += `[ ${groups} ]`;
+      let hstgrp = _.map(trigger.hstgrp, 'name').join(', ');
+      groupNames += `[ ${hstgrp} ]`;
     }
 
     return groupNames;

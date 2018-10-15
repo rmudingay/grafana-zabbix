@@ -168,14 +168,14 @@ function handleTriggersResponse(triggers, timeRange) {
 }
 
 function getTriggerStats(triggers) {
-  let groups = _.uniq(_.flattenDeep(_.map(triggers, (trigger) => _.map(trigger.groups, 'name'))));
+  let hstgrp = _.uniq(_.flattenDeep(_.map(triggers, (trigger) => _.map(trigger.hstgrp, 'name'))));
   // let severity = _.map(c.TRIGGER_SEVERITY, 'text');
   let stats = {};
-  _.each(groups, (group) => {
+  _.each(hstgrp, (group) => {
     stats[group] = {0:0, 1:0, 2:0, 3:0, 4:0, 5:0}; // severity:count
   });
   _.each(triggers, (trigger) => {
-    _.each(trigger.groups, (group) => {
+    _.each(trigger.hstgrp, (group) => {
       stats[group.name][trigger.priority]++;
     });
   });

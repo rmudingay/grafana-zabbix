@@ -150,7 +150,7 @@ export class Zabbix {
 
   getGroups(groupFilter) {
     return this.getAllGroups()
-    .then(groups => findByFilter(groups, groupFilter));
+    .then(hstgrp => findByFilter(hstgrp, groupFilter));
   }
 
   /**
@@ -158,8 +158,8 @@ export class Zabbix {
    */
   getAllHosts(groupFilter) {
     return this.getGroups(groupFilter)
-    .then(groups => {
-      let groupids = _.map(groups, 'groupid');
+    .then(hstgrp => {
+      let groupids = _.map(hstgrp, 'groupid');
       return this.zabbixAPI.getHosts(groupids);
     });
   }

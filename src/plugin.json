@@ -26,8 +26,8 @@
       {"name": "Metric Editor", "path": "img/screenshot-metric_editor.png"},
       {"name": "Triggers", "path": "img/screenshot-triggers.png"}
     ],
-    "version": "3.9.1",
-    "updated": "2018-05-02"
+    "version": "3.9.2",
+    "updated": "2018-10-15"
   },
 
   "includes": [

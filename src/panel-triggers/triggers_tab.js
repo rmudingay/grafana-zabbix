@@ -44,8 +44,8 @@ class TriggersTabCtrl {
 
   suggestGroups(datasource, query, callback) {
     return datasource.zabbix.getAllGroups()
-    .then(groups => {
-      return _.map(groups, 'name');
+    .then(hstgrp => {
+      return _.map(hstgrp, 'name');
     })
     .then(callback);
   }

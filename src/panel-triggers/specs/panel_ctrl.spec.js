@@ -212,7 +212,7 @@ describe('TriggerPanelCtrl', () => {
 const defaultTrigger = {
   "triggerid": "13565",
   "value": "1",
-  "groups": [{"groupid": "1", "name": "Backend"}] ,
+  "hstgrp": [{"groupid": "1", "name": "Backend"}] ,
   "hosts": [{"host": "backend01_tech", "hostid": "10001","maintenance_status": "0", "name": "backend01"}] ,
   "lastEvent": {
     "eventid": "11",

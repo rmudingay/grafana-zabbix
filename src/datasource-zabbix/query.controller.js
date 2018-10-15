@@ -157,9 +157,9 @@ export class ZabbixQueryController extends QueryCtrl {
 
   suggestGroups() {
     return this.zabbix.getAllGroups()
-    .then(groups => {
-      this.metric.groupList = groups;
-      return groups;
+    .then(hstgrp => {
+      this.metric.groupList = hstgrp;
+      return hstgrp;
     });
   }
 
